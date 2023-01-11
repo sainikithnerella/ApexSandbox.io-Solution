@@ -6,9 +6,9 @@ public Boolean isKeyAccount(Account a) {
    {
         return false;
    }
-     else {
+     
          return true;
-     }
+     
      
      
      
