@@ -1,5 +1,5 @@
 public Boolean duplicateContacts(Contact c1, Contact c2) {
-    IF (C1.PHONE == C2.PHONE || C1.EMAIL == C2.EMAIL){
+    IF ((C1.PHONE == C2.PHONE || C1.EMAIL == C2.EMAIL) && c1.phone != null && c1.email != null){
 
         return true;
     }
