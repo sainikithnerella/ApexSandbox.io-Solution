@@ -1,15 +1,9 @@
 public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
-    Set<Integer> a = new Set<Integer>();
-       for(Integer b : set1)
-       {
-           if(set2.contains(b))
-
-       {
-            a.add(b);
-       }
-       }
-      
-        return a;
+    Set<Integer> a = new Set<Integer>(set1);
+       a.retainAll(set2);
+        
+        
+    return a;
 
 
 }
