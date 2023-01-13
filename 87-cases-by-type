@@ -5,10 +5,10 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
            if(casesList.containsKey(c.Type)){
                casesList.get(c.Type).add(c);
            }
-           else{
+           else {
                casesList.put(c.Type, new List<Case> {c});
            }
-       }
-
+        }
+     }
        return casesList;
    }
