@@ -3,7 +3,7 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     for (Integer i=0; i<studentNames.size(); i++){
     apxio__Student__c student = new apxio__Student__c();
     student.Name = studentNames[i];
-    s.apxio__Email__c = studentEmails[i];
+    student.apxio__Email__c = studentEmails[i];
     students.add(student);
     }
 
