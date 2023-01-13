@@ -1,0 +1,17 @@
+public Id classFromCourse(String courseName) {
+    apxio__Class__c clss = new apxio__Class__c ();
+    clss.Name = courseName;
+    List<apxio__Course__c > course = [SELECT Id FROM apxio__Course__c WHERE Name = courseName];
+   
+   if(course.size > 0){
+       clss.apxio__Course__c = course[0].Id;
+       insert clss;
+       return clss.id;
+   }
+
+else return null;
+
+
+
+
+}
